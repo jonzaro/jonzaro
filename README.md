@@ -1,8 +1,10 @@
-<h1 align="center">Hi 👋, Jon from Smash Creative</h1>
+<h1 align="center">Hi 👋, I'm Jon from Smash Creative</h1>
 <h3 align="center">A passionate software developer from Seattle</h3>
 
+<hr>
+<br>
 
-- 💪 I’m currently working on [resurrecting a company dashboard](github.butitsprivate)
+- 💪 I’m currently working on **resurrecting a company dashboard** github.butitsprivate
 
 - 🤓 I’m currently learning **Typescript, Nivo, DigitalOcean**
 
