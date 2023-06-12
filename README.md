@@ -12,7 +12,7 @@
 
 - 🤝 I’m looking for help with [responsive design](https://github.com/jonzaro/level5-cap)
 
-- 👨‍💻 All of my projects are available at [a cyclic page that is yet to be deployed](a cyclic page that is yet to be deployed)
+- 👨‍💻 All of my projects are available at [https://jonzaro.cyclic.app]
 
 - 💬 Ask me about **my hobbies in nature**
 
