@@ -4,7 +4,7 @@
 <hr>
 <br>
 
-- 💪 I’m currently working on **resurrecting a company dashboard** github.butitsprivate
+- 💪 I’m currently working on **The Burn App by Cara Loren (iOS/android) ** github.butitsprivate
 
 - 🤓 I’m currently learning **Typescript, Nivo, DigitalOcean**
 
