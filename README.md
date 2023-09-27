@@ -4,9 +4,9 @@
 <hr>
 <br>
 
-- 💪 I’m currently working on **e2e testing for The Burn App by Cara Loren (iOS/android)** github.butitsprivate
+- 💪 I’m currently working on **Feature releases for The Burn App by Cara Loren (iOS/android)** github.butitsprivate
 
-- 🤓 I’m currently learning **Typescript and Tamagui**
+- 🤓 I’m currently learning **Typescript and Gluestack**
 
 - 👯 I’m looking to collaborate on [front end react apps, dashboards, and automation.]
 
