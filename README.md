@@ -1,26 +1,49 @@
-# Jon Zaro
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img alt="jon zaro: lead developer. Exit, deploy, land." src="assets/header-light.svg" width="860">
+</picture>
 
-Lead developer. I design and run the systems behind subscription products: billing, accounts, data, and the automation that keeps them honest.
+I build the plumbing behind subscription apps: the stretch between *Pay now* and *Welcome in* that nobody thinks about until it breaks. Billing, accounts, data, and lately a crew of AI agents that do the legwork while I make the calls.
 
-## What I'm working on
+Off the clock I jump out of airplanes, which turns out to be decent training for production deploys.
 
-- **Moving a consumer fitness app's web signup off WordPress onto its own API.** Stripe checkout feeding RevenueCat entitlements, passwordless magic-link sign-in, and a cutover with a minutes-long rollback.
-- **Subscription data integrity across Stripe, RevenueCat and Postgres.** Reconciliation, backfills that agree with the live webhooks, and error reporting that only fires on real errors.
-- **AI-assisted delivery.** Orchestrated Claude agent workflows for implementation, automated PR review, and reporting that turns each working session into a log the team can read.
+### On the plane right now
 
-## How I work
+Moving a subscription fitness app's web signup off WordPress and onto its own API. Pay on the web, open the app already signed in, no password anywhere.
 
-Plans with gates, tests before merge, and nothing counts as shipped until the deploy is verified in production.
+```mermaid
+flowchart LR
+    site[New landing page] -->|account first| api[App API]
+    site -->|checkout| stripe[Stripe]
+    stripe -->|webhook| api
+    api -->|receipt| rc[RevenueCat]
+    api -->|magic link| mail[Email]
+    mail -->|opens signed in| app[iOS and Android app]
+    rc -->|entitlement| app
+    api --- db[(Postgres)]
+```
 
-## Stack
+### Jump rules
 
-- **Backend and infrastructure:** Node, TypeScript, Express, tRPC, Postgres, Prisma, Redis, Fly.io, Doppler, GitHub Actions
-- **Apps and web:** React Native (Expo), React, Astro, Vercel
-- **Billing and data:** Stripe, RevenueCat, PostHog, Klaviyo, Sentry
-- **AI:** Claude Code, multi-agent orchestration, MCP
+1. **Pack your own chute.** Every cutover ships with a rollback, and I rehearse it before I need it.
+2. **Merged isn't landed.** It's done when production says so, not when the PR goes green.
+3. **Trust the altimeter.** A number goes on a dashboard after it matches a second source.
+4. **Agents fly, I check the gear.** Claude runs the searches, the tests and the first drafts. I read every diff.
 
-## Elsewhere
+### Logbook
+
+| When | Jump | Why it mattered |
+|---|---|---|
+| Oct 2026 | Passwordless sign-in backend: single-use links and codes, hashed at rest, rate limited | Takes the password step out of paid signup |
+| Oct 2026 | Trial reminders moved off WP-cron onto the API | They stop quietly dying when site traffic drops |
+| Sep 2026 | Healed 2,403 subscription rows a backfill had left unreachable by webhooks | Billing state matches reality again |
+
+### Gear
+
+`typescript` · `node` · `trpc` · `postgres` + `prisma` · `redis` · `fly.io` · `stripe` · `revenuecat` · `expo` · `astro` · `posthog` · `sentry` · `claude code`
+
+### Ground crew
 
 [LinkedIn](https://linkedin.com/in/jonzaro) · [Resume](https://jonzaroresume.tiiny.site/) · [Book a call](https://calendly.com/jonzaro) · writetojonzaro@gmail.com
 
-Dad of three boys. I jump out of airplanes on purpose.
+<sub>Dad of three boys, which is its own kind of on-call.</sub>
