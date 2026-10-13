@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="210" viewBox="0 0 860 210" role="img" aria-label="Jon Zaro, lead developer. Exit, deploy, land.">
+  <style>
+    .name{font:700 46px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#e6edf3}
+    .sub{font:400 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8d96a0}
+    .lbl{font:600 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#8d96a0;letter-spacing:.08em}
+    .hot{fill:#ff8a5c}
+  </style>
+  <text class="name" x="32" y="92">jon zaro</text>
+  <text class="sub" x="34" y="126">lead developer · subscription systems,</text>
+  <text class="sub" x="34" y="148">billing, data, and the agents that help run them</text>
+  <!-- the jump: exit, freefall, deploy, land -->
+  <path d="M520 42 C 600 46, 640 70, 690 108" fill="none" stroke="#8d96a0" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <path d="M700 122 C 735 150, 770 168, 818 176" fill="none" stroke="#ff8a5c" stroke-width="2.5" stroke-linecap="round"/>
+  <g transform="translate(508 34)" fill="#e6edf3">
+    <path d="M0 8 L22 8 L28 3 L31 3 L28 8 L34 8 L34 11 L0 11 Z"/>
+  </g>
+  <g transform="translate(696 98)">
+    <path d="M-18 6 Q0 -14 18 6 Z" class="hot"/>
+    <path d="M-17 6 L0 24 M17 6 L0 24 M0 6 L0 24" stroke="#ff8a5c" stroke-width="1.2" fill="none"/>
+  </g>
+  <g transform="translate(826 176)" stroke="#e6edf3" stroke-width="2.5" stroke-linecap="round">
+    <path d="M-6 -6 L6 6 M6 -6 L-6 6"/>
+  </g>
+  <text class="lbl" x="512" y="70">EXIT</text>
+  <text class="lbl hot" x="724" y="96">DEPLOY</text>
+  <text class="lbl" x="770" y="204">LAND ✓</text>
+</svg>

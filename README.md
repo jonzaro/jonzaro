@@ -1,34 +1,49 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=485&lines=Hello%2C+I'm+Jon+Zaro%2C;I'm+a+software+developer...;I'm+a+father...;And+I+jump+out+of+airplanes+on+purpose.)](https://git.io/typing-svg)
-<hr>
-<br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img alt="jon zaro: lead developer. Exit, deploy, land." src="assets/header-light.svg" width="860">
+</picture>
 
-- 💪 I’m currently working on **Feature releases for The Burn App by Cara Loren (iOS/android)** github.butitsprivate
+I build the plumbing behind subscription apps: the stretch between *Pay now* and *Welcome in* that nobody thinks about until it breaks. Billing, accounts, data, and lately a crew of AI agents that do the legwork while I make the calls.
 
-- 🤓 I’m learning **WordPress Exit migrations**
+Off the clock I jump out of airplanes, which turns out to be decent training for production deploys.
 
-- 👯 I’m looking to collaborate on [front end react apps, dashboards, and automation.]
+### Right now
 
-- 🤝 I’m looking for help building scripts for claude/agents
+Moving a subscription fitness app's web signup off WordPress and onto its own API. Pay on the web, open the app already signed in, no password anywhere.
 
-- 💬 Ask me about **my hobbies in nature**
+```mermaid
+flowchart LR
+    site[New landing page] -->|account first| api[App API]
+    site -->|checkout| stripe[Stripe]
+    stripe -->|webhook| api
+    api -->|receipt| rc[RevenueCat]
+    api -->|magic link| mail[Email]
+    mail -->|opens signed in| app[iOS and Android app]
+    rc -->|entitlement| app
+    api --- db[(Postgres)]
+```
 
-- 📫 How to reach me **writetojonzaro@gmail.com**
+### How I work
 
-- 💻 Or schedule a quick video call with me at [my calendly page](http://calendly.com/jonzaro)
+1. **Every cutover ships with a rollback**, and I rehearse it before I need it.
+2. **Merged isn't shipped.** It's done when production says so, not when the PR goes green.
+3. **Numbers get a second source.** A metric goes on a dashboard after it matches the database.
+4. **Agents do the legwork, I make the calls.** Claude runs the searches, the tests and the first drafts. I read every diff.
 
-- 📄 Lean about my professional experience by taking a look at [my resume](https://jonzaroresume.tiiny.site/)
+### Recent work
 
-- ⚡ Fun fact ⚡ **I am a dad of 3 boys 👦🏻👦🏼👦🏼**
+| When | What | Why it mattered |
+|---|---|---|
+| Oct 2026 | Passwordless sign-in backend: single-use links and codes, hashed at rest, rate limited | Takes the password step out of paid signup |
+| Oct 2026 | Trial reminders moved off WP-cron onto the API | They stop quietly dying when site traffic drops |
+| Sep 2026 | Healed 2,403 subscription rows a backfill had left unreachable by webhooks | Billing state matches reality again |
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/jonzaro" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jonzaro" height="30" width="40" /></a>
-<a href="https://discord.gg/nzp895AM" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="nzp895AM" height="30" width="40" /></a>
-</p>
+### Stack
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://canvasjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg" alt="canvasjs" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+`typescript` · `node` · `trpc` · `postgres` + `prisma` · `redis` · `fly.io` · `stripe` · `revenuecat` · `expo` · `astro` · `posthog` · `sentry` · `claude code`
 
-<h3 align="left">Support:</h3>
-<p>
-<a href="https://www.buymeacoffee.com/caffeinepls"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="caffeinepls" /></p>
+### Contact
+
+[LinkedIn](https://linkedin.com/in/jonzaro) · [Resume](https://jonzaroresume.tiiny.site/) · [Book a call](https://calendly.com/jonzaro) · writetojonzaro@gmail.com
+
+<sub>Dad of three boys, which is its own kind of on-call.</sub>
