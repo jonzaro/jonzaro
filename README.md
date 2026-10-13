@@ -1,34 +1,26 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&random=false&width=485&lines=Hello%2C+I'm+Jon+Zaro%2C;I'm+a+software+developer...;I'm+a+father...;And+I+jump+out+of+airplanes+on+purpose.)](https://git.io/typing-svg)
-<hr>
-<br>
+# Jon Zaro
 
-- 💪 I’m currently working on **Feature releases for The Burn App by Cara Loren (iOS/android)** github.butitsprivate
+Lead developer. I design and run the systems behind subscription products: billing, accounts, data, and the automation that keeps them honest.
 
-- 🤓 I’m learning **WordPress Exit migrations**
+## What I'm working on
 
-- 👯 I’m looking to collaborate on [front end react apps, dashboards, and automation.]
+- **Moving a consumer fitness app's web signup off WordPress onto its own API.** Stripe checkout feeding RevenueCat entitlements, passwordless magic-link sign-in, and a cutover with a minutes-long rollback.
+- **Subscription data integrity across Stripe, RevenueCat and Postgres.** Reconciliation, backfills that agree with the live webhooks, and error reporting that only fires on real errors.
+- **AI-assisted delivery.** Orchestrated Claude agent workflows for implementation, automated PR review, and reporting that turns each working session into a log the team can read.
 
-- 🤝 I’m looking for help building scripts for claude/agents
+## How I work
 
-- 💬 Ask me about **my hobbies in nature**
+Plans with gates, tests before merge, and nothing counts as shipped until the deploy is verified in production.
 
-- 📫 How to reach me **writetojonzaro@gmail.com**
+## Stack
 
-- 💻 Or schedule a quick video call with me at [my calendly page](http://calendly.com/jonzaro)
+- **Backend and infrastructure:** Node, TypeScript, Express, tRPC, Postgres, Prisma, Redis, Fly.io, Doppler, GitHub Actions
+- **Apps and web:** React Native (Expo), React, Astro, Vercel
+- **Billing and data:** Stripe, RevenueCat, PostHog, Klaviyo, Sentry
+- **AI:** Claude Code, multi-agent orchestration, MCP
 
-- 📄 Lean about my professional experience by taking a look at [my resume](https://jonzaroresume.tiiny.site/)
+## Elsewhere
 
-- ⚡ Fun fact ⚡ **I am a dad of 3 boys 👦🏻👦🏼👦🏼**
+[LinkedIn](https://linkedin.com/in/jonzaro) · [Resume](https://jonzaroresume.tiiny.site/) · [Book a call](https://calendly.com/jonzaro) · writetojonzaro@gmail.com
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/jonzaro" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jonzaro" height="30" width="40" /></a>
-<a href="https://discord.gg/nzp895AM" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="nzp895AM" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://canvasjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg" alt="canvasjs" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
-
-<h3 align="left">Support:</h3>
-<p>
-<a href="https://www.buymeacoffee.com/caffeinepls"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="caffeinepls" /></p>
+Dad of three boys. I jump out of airplanes on purpose.
