@@ -4,13 +4,11 @@
 
 - 💪 I’m currently working on **Feature releases for The Burn App by Cara Loren (iOS/android)** github.butitsprivate
 
-- 🤓 I’m learning **Typescript and Zod**
+- 🤓 I’m learning **WordPress Exit migrations**
 
 - 👯 I’m looking to collaborate on [front end react apps, dashboards, and automation.]
 
-- 🤝 I’m looking for help styling [my iOS loyalty app](https://github.com/jonzaro/prize-portal-expo-ios-app)
-
-- 👨‍💻 All of my projects are available at [my portfolio site](https://bit.ly/jon_zaro)
+- 🤝 I’m looking for help building scripts for claude/agents
 
 - 💬 Ask me about **my hobbies in nature**
 
